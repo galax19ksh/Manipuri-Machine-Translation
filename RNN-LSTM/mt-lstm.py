@@ -15,11 +15,11 @@ from torch.utils.data import Dataset, DataLoader
 from torch.nn.utils.rnn import pad_sequence
 from sklearn.model_selection import train_test_split
 
-from google.colab import drive
-drive.mount('/content/drive')
+#from google.colab import drive
+#drive.mount('/content/drive')
 
 # Define paths to the data files
-data_folder = '/content/drive/MyDrive/datasets/manipuri MT/English-Manipuri/parallel'
+data_folder = '/path/to/parallel/data/directory'
 train_src_file = os.path.join(data_folder, 'en-mni-train-mni.txt')
 train_tgt_file = os.path.join(data_folder, 'en-mni-train-en.txt')
 valid_src_file = os.path.join(data_folder, 'en-mni-valid-mni.txt')
